@@ -198,7 +198,7 @@
     .section-alt a:hover { color: var(--neon1); }
 
     /* Link pills */
-    .link-pill { display:inline-flex; align-items:center; gap:.5rem; padding:.5rem .75rem; border-radius:9999px; border:1px solid rgba(255,255,255,.15); background:rgba(255,255,255,.06); backdrop-filter: blur(4px); }
+    .link-pill { display:inline-flex; align-items:center; gap:.5rem; padding:.5rem .75rem; border-radius:9999px; border:1px solid rgba(255,255,255,.15); background:rgba(255,255,255,.06); backdrop[...] }
     .link-pill:hover { background:rgba(255,255,255,.12); border-color: rgba(255,255,255,.25); }
     .link-icon { width:1rem; height:1rem; opacity:.9; }
 
@@ -212,7 +212,7 @@
     .drips:after { animation: drip 2.8s ease-in-out infinite alternate; }
 
     /* Tape-style labels for card titles */
-    .card h4 { display:inline-block; padding:.45rem .7rem; background: repeating-linear-gradient(-45deg, rgba(255,255,255,.06) 0 8px, rgba(0,0,0,.25) 8px 16px); transform: rotate(-1.5deg); border:1px solid rgba(0,0,0,0.06); }
+    .card h4 { display:inline-block; padding:.45rem .7rem; background: repeating-linear-gradient(-45deg, rgba(255,255,255,.06) 0 8px, rgba(0,0,0,.25) 8px 16px); transform: rotate(-1.5deg); border[...] }
     .card h4::after{ content:""; display:block; height:6px; margin-top:6px; background: linear-gradient(90deg, var(--neon1), transparent 60%); opacity:.45; }
 
     /* Roughen link pills + slight skews */
@@ -224,16 +224,16 @@
     .card:hover { transform: translateY(-6px) rotate(-.6deg); }
 
     /* Graffiti corner tags in header */
-    .spray-tag { position:absolute; font-family:'Rubik Wet Paint', system-ui; font-size: clamp(24px,4vw,48px); pointer-events:none; opacity:.9; text-shadow: 0 0 6px rgba(255,255,255,.2), 0 0 18px rgba(57,255,20,.08); }
+    .spray-tag { position:absolute; font-family:'Rubik Wet Paint', system-ui; font-size: clamp(24px,4vw,48px); pointer-events:none; opacity:.9; text-shadow: 0 0 6px rgba(255,255,255,.2), 0 0 18px[...] }
     .spray-tag.left { left:1rem; top:1rem; transform: rotate(-8deg); }
     .spray-tag.right { right:1rem; bottom:1rem; transform: rotate(7deg); }
 
     /* Slight film grain */
-    body:after { content:""; position:fixed; inset:0; pointer-events:none; z-index:-1; background: radial-gradient(1px 1px at 10% 20%, rgba(255,255,255,.04) 0 50%, transparent 51%), radial-gradient(1px 1px at 70% 80%, rgba(0,0,0,.03) 0 50%, transparent 51%); opacity:0.08; }
+    body:after { content:""; position:fixed; inset:0; pointer-events:none; z-index:-1; background: radial-gradient(1px 1px at 10% 20%, rgba(255,255,255,.04) 0 50%, transparent 51%), radial-gradie[...] }
 
     /* Rough card edges overlay */
     .card{ position: relative; }
-    .card::before{ content:""; position:absolute; inset:-1px; border-radius:inherit; pointer-events:none; background: url('assets/grunge-edge.png'); background-size: cover; mix-blend-mode: overlay; opacity: 0.12; }
+    .card::before{ content:""; position:absolute; inset:-1px; border-radius:inherit; pointer-events:none; background: url('assets/grunge-edge.png'); background-size: cover; mix-blend-mode: overla[...] }
     .header-graffiti{ filter: hue-rotate(290deg) saturate(1.25) brightness(1.05); mix-blend-mode: screen; }
     .header-can{ position:absolute; right:4%; bottom:-6%; height:115%; transform: rotate(-4deg); filter: drop-shadow(0 0 12px rgba(57,255,20,.6)); }
     .header-can-wrap{ position:absolute; right:4%; bottom:-6%; height:115%; width:auto; transform: rotate(-4deg); }
@@ -252,7 +252,7 @@
     const url='assets/brand/dcktoken_banner_1500x500.png';
     test.onload=()=>{/* ok */};
     test.onerror=()=>{
-      el.style.backgroundImage = 'linear-gradient(135deg, rgba(57,255,20,.25), rgba(255,46,189,.25)), radial-gradient(800px 400px at 20% 20%, rgba(57,255,20,.25), transparent 60%), radial-gradient(600px 300px at 80% 60%, rgba(255,46,189,.18), transparent 60%)';
+      el.style.backgroundImage = 'linear-gradient(135deg, rgba(57,255,20,.25), rgba(255,46,189,.25)), radial-gradient(800px 400px at 20% 20%, rgba(57,255,20,.25), transparent 60%), radial-gradien[...]';
       el.style.backgroundBlendMode='screen,screen,screen';
     };
     test.src=url;
@@ -332,13 +332,23 @@
     </div>
 
     <div class="absolute inset-0 bg-gradient-to-r from-black/40 via-black/20 to-black/40 pointer-events-none"></div>
-    <div class="absolute inset-0 pointer-events-none" style="background-image: linear-gradient(transparent 0 98%, rgba(255,255,255,.08) 98% 100%), linear-gradient(90deg, transparent 0 98%, rgba(255,255,255,.02) 98% 100%);"></div>
+    <div class="absolute inset-0 pointer-events-none" style="background-image: linear-gradient(transparent 0 98%, rgba(255,255,255,.08) 98% 100%), linear-gradient(90deg, transparent 0 98%, rgba(2[...]"></div>
     <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-3">
       <a href="#krew" class="px-4 py-2 rounded-xl border border-white/20 bg-white/10 hover:bg-white/15 text-sm backdrop-blur btn-neon">Meet the Krew</a>
       <a href="#tokenomics" class="px-4 py-2 rounded-xl bg-fuchsia-600/80 hover:bg-fuchsia-500 text-white border border-white/10 text-sm backdrop-blur btn-neon">See Tokenomics</a>
     </div>
   </div>
 </section>
+
+<!-- Build fingerprint snippet (appended for verification) -->
+<script>
+  (function(){
+    const el=document.createElement('div');
+    el.style.cssText="position:fixed;right:8px;bottom:8px;color:#8b8b8b;font:11px/1.2 system-ui;background:#0008;padding:4px 6px;border-radius:6px;border:1px solid #222;z-index:99999";
+    el.textContent="DCK build: "+(new Date()).toISOString();
+    document.body.appendChild(el);
+  })();
+</script>
 
 </body>
 </html>
