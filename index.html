@@ -280,6 +280,40 @@
       <a href="#mint" class="px-4 py-2 rounded-xl btn-neon">Join the Krew</a>
     </div>
   </header>
+
+  <!-- ===== HERO (video background) ===== -->
+  <section id="hero" class="hero-wrap">
+    <video
+      class="hero-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="metadata"
+      poster="/logo.png"
+      disablepictureinpicture
+      disableremoteplayback
+      controlslist="nodownload noplaybackrate noremoteplayback"
+      aria-hidden="true"
+    >
+      <source src="/assets/video/hero.mp4?v=3" type="video/mp4">
+      <!-- Optional later:
+      <source src="/assets/video/hero.webm?v=1" type="video/webm"> -->
+      <img src="/logo.png" alt="DCK$">
+    </video>
+
+    <!-- Overlay for readability -->
+    <div class="hero-overlay"></div>
+  </section>
+
+  <!-- Inline styles kept tiny and scoped -->
+  <style>
+    .hero-wrap{position:relative;min-height:60vh;overflow:hidden}
+    .hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;pointer-events:none;background:#0b0b0d}
+    .hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.35),rgba(0,0,0,.55));z-index:0}
+    @media (max-width:640px){.hero-wrap{min-height:54vh}}
+  </style>
+
   <!-- PAGE HEADER (not a hero) -->
   <section id="page-header" class="relative border-b border-white/10">
   <div class="relative overflow-hidden">
@@ -305,5 +339,6 @@
     </div>
   </div>
 </section>
+
 </body>
 </html>
