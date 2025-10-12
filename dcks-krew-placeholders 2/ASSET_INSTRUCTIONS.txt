@@ -1,0 +1,17 @@
+DCK$ Krew placeholders (generated 2025-10-12T07:10:33.203688Z)
+
+Upload to your repo (branch: main) using the GitHub web UI:
+
+Place in: assets/krew/
+  - kato.png
+  - big-block.png
+  - pixel.png
+  - glitch.png
+  - c1ph3r.png
+
+Place in: assets/video/
+  - hero-poster.jpg
+
+After commit, Vercel redeploys. Hard refresh the site.
+If your HTML uses /assets/mascots/ instead of /assets/krew/, either upload copies
+there or update <img src> to /assets/krew/ in index.html.
