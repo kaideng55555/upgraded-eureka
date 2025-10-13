@@ -1,0 +1,25 @@
+<!-- BEGIN: DCK$ hero video -->
+<video id="heroVideo" class="hero-video" autoplay muted loop playsinline
+       poster="/assets/video/hero-poster.jpg">
+  <source src="/assets/video/hero.webm" type="video/webm">
+  <source src="/assets/video/hero.mp4"  type="video/mp4">
+  <!-- Fallback still for ancient browsers -->
+  <img src="/assets/video/hero-poster.jpg" alt="DCK$ Tools">
+</video>
+
+<style>
+  .hero-video{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:0;          /* video behind content */
+    pointer-events:none;/* keep buttons clickable */
+    background:#0b0b0d; /* dark fallback */
+  }
+  /* ensure hero content sits above the video */
+  header.hero, .hero-wrap { position:relative; overflow:hidden; min-height:60vh; }
+  header.hero > *, .hero-wrap > * { position:relative; z-index:1; }
+</style>
+<!-- END: DCK$ hero video -->
