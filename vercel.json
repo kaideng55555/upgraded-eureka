@@ -1,0 +1,1 @@
+{"routes":[{"src":"\\/(.*)","has":[{"type":"host","value":"www.dcktoken.com"}],"dest":"https://dcktoken.com/$1","permanent":true}],"headers":[{"source":"/assets/video/(.*)","headers":[{"key":"Cache-Control","value":"public, max-age=31536000, immutable"},{"key":"Accept-Ranges","value":"bytes"}]}]}

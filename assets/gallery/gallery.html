@@ -1,0 +1,39 @@
+<!-- ==== GALLERY / POSTERS (Pixel leads) ==== -->
+<section id="gallery" class="gallery">
+  <h2>Posters & Gallery</h2>
+  <div class="grid-gallery">
+    <figure class="xl">
+      <img src="/images/pixel-promo-2.png?v=2" alt="Pixel — DCK$ Tools promo" loading="lazy">
+      <figcaption>Pixel — DCK$ Tools</figcaption>
+    </figure>
+    <figure>
+      <img src="/images/pixel-promo.jpg?v=2" alt="Pixel — Alley" loading="lazy">
+      <figcaption>Pixel — Alley</figcaption>
+    </figure>
+    <figure>
+      <img src="/images/c1ph3r.png?v=2" alt="C1ph3R — The Cipher" loading="lazy">
+      <figcaption>C1ph3R — The Cipher</figcaption>
+    </figure>
+    <figure>
+      <img src="/images/crew_wu_purple.webp?v=2" alt="Big Block — The Muscle" loading="lazy">
+      <figcaption>Big Block — The Muscle</figcaption>
+    </figure>
+    <figure>
+      <img src="/images/crew_zedsdead.webp?v=2" alt="Kato — The Boss" loading="lazy">
+      <figcaption>Kato — The Boss</figcaption>
+    </figure>
+    <figure>
+      <img src="/images/crew_glitch.webp?v=2" alt="Glitch — The Hacker" loading="lazy">
+      <figcaption>Glitch — The Hacker</figcaption>
+    </figure>
+  </div>
+</section>
+<style>
+  .gallery h2{margin:0 0 12px}
+  .grid-gallery{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));align-items:start}
+  .grid-gallery figure{margin:0}
+  .grid-gallery img{width:100%;height:100%;display:block;border-radius:12px;object-fit:cover;aspect-ratio:4/3}
+  .grid-gallery figure.xl img{aspect-ratio:16/9}
+  .grid-gallery figcaption{font-size:.9rem;opacity:.85;margin-top:6px}
+  @media (max-width:720px){.grid-gallery{gap:10px}}
+</style>
