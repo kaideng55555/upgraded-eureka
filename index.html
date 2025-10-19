@@ -363,8 +363,15 @@
     const audio=document.getElementById('krewAudio');
     const btn=document.getElementById('toggleMusic');
     btn.addEventListener('click',()=>{
-      if(audio.paused){audio.play();btn.textContent='🎵 PAUSE';}
-      else{audio.pause();btn.textContent='🎵 PLAY';}
+      if(audio.paused){
+        audio.play();
+        btn.textContent = '🎵 PAUSE';
+        btn.setAttribute('aria-label', 'Pause KREW$ music');
+      } else {
+        audio.pause();
+        btn.textContent = '🎵 PLAY';
+        btn.setAttribute('aria-label', 'Play KREW$ music');
+      }
     });
   })();
 </script>
