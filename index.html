@@ -1,8 +1,19 @@
 <html>
 <head>
     <title>My Page</title>
+    <style>
+      .krew-video{width:100%;height:100%;object-fit:cover;display:block}
+      @media (prefers-reduced-motion: reduce){.krew-video{animation:none}}
+    </style>
 </head>
 <body>
     <h1>Welcome to My Page</h1>
+    <div id="krew-cards">
+      <video src="assets/krew/pixel.mp4" autoplay muted loop playsinline preload="metadata" class="krew-video"></video>
+      <video src="assets/krew/glitch.mp4" autoplay muted loop playsinline preload="metadata" class="krew-video"></video>
+      <video src="assets/krew/c1ph3r.mp4" autoplay muted loop playsinline preload="metadata" class="krew-video"></video>
+      <video src="assets/krew/big-block.mp4" autoplay muted loop playsinline preload="metadata" class="krew-video"></video>
+      <video src="assets/krew/kato.mp4" autoplay muted loop playsinline preload="metadata" class="krew-video"></video>
+    </div>
 </body>
 </html>
