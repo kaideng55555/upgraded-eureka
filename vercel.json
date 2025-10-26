@@ -1,1 +1,1 @@
-{"routes":[{"src":"/(.*)","has":[{"type":"host","value":"www.dcktoken.com"}],"dest":"https://dcktoken.com/$1"}]}
+{ "rewrites": [ { "source": "/(.*)", "destination": "/" } ] }
