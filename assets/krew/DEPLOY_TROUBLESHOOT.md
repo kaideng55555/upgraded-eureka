@@ -1,3 +1,4 @@
+add/deploy-troubleshoot
 # Krew / Deploy Troubleshooting
 
 Purpose
@@ -28,9 +29,7 @@ Common symptoms and immediate checks
 Environment-specific checks
 - Kubernetes / Krew client:
   - Commands to collect:
-    - kubectl krew version
-    - kubectl krew list
-    - kubectl krew info <plugin>
+   <plugin>
   - Check for incompatible client versions.
 - Docker / Build:
   - docker build logs
@@ -67,3 +66,5 @@ Escalation steps
 Related links
 - krew index format: https://github.com/kubernetes-sigs/krew-index
 - krew client docs: https://krew.sigs.k8s.io/
+add/deploy-troubleshoot → Propose new file → Create pull request.
+main
