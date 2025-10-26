@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 # Update build timestamp in index.html
 # Usage: ./update-timestamp.sh
 
