@@ -21,6 +21,14 @@
 
   <!-- Tailwind CSS (CDN) -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Remove dotted separator/hairline above The Krew.
+       Note: In this codebase, the border above "The Krew" section is applied to #page-header,
+       so we target #page-header here to remove it. */
+    #page-header {
+      border-bottom: none !important;
+    }
+  </style>
   <script>
   // If Tailwind CDN is blocked, inject a tiny fallback stylesheet so the page still renders.
   (function(){
