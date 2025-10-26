@@ -1,0 +1,11 @@
+{
+  "name": "dcktoken-website",
+  "version": "1.0.0",
+  "description": "DCK$ — Digital Currency Kid$ official website",
+  "scripts": {
+    "build": "mkdir -p dist && cp -r index.html logo.png assets metadata CNAME vercel.json dist/ && find dist -name '.DS_Store' -delete || true"
+  },
+  "keywords": ["dcktoken"],
+  "author": "",
+  "license": "ISC"
+}

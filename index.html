@@ -19,8 +19,9 @@
   <meta property="og:image" content="https://dcktoken.com/assets/brand/og-image.png" />
   <meta name="twitter:image" content="https://dcktoken.com/assets/brand/og-image.png" />
   
-  <!-- Build timestamp for deploy confirmation -->
-  <meta name="build-timestamp" content="2025-10-12T21:51:09Z" />
+  <!-- Build fingerprint: Static commit hash from build-time (replaces runtime timestamp) -->
+  <!-- This corresponds to the git commit hash at build time: 1584e5ac538670f88b1f108d64bb6ac7cdcabe37 -->
+  <meta name="dck-build" content="1584e5ac538670f88b1f108d64bb6ac7cdcabe37" />
 
   <!-- Tailwind CSS (CDN) -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -143,7 +144,7 @@
     }
 
     /* Spray cursor (fallback image). Replace with your PNG if you have one */
-    body, a, button { cursor: pointer; }
+    a, button { cursor: pointer; }
 
     /* Neon text glow */
     .neon { text-shadow:
@@ -154,7 +155,6 @@
 
     /* Card hover */
     .card { transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease; }
-    .card:hover { transform: translateY(-4px) rotate(-.25deg); box-shadow: 0 10px 30px rgba(0,0,0,.35); border-color: rgba(255,255,255,.25); }
 
     /* Hidden audio */
 
@@ -201,7 +201,7 @@
     .section-alt a:hover { color: var(--neon1); }
 
     /* Link pills */
-    .link-pill { display:inline-flex; align-items:center; gap:.5rem; padding:.5rem .75rem; border-radius:9999px; border:1px solid rgba(255,255,255,.15); background:rgba(255,255,255,.06); backdrop-filter: blur(4px); }
+    .link-pill { display:inline-flex; align-items:center; gap:.5rem; padding:.5rem .75rem; border-radius:9999px; border:1px solid rgba(255,255,255,.15); background:rgba(255,255,255,.06); backdrop-filter:blur(6px); }
     .link-pill:hover { background:rgba(255,255,255,.12); border-color: rgba(255,255,255,.25); }
     .link-icon { width:1rem; height:1rem; opacity:.9; }
 
