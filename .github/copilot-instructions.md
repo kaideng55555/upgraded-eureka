@@ -26,7 +26,7 @@ This creates a `dist/` directory with all deployable assets.
 ### Testing Locally
 Since this is a static HTML site:
 1. Open `index.html` directly in a browser, or
-2. Use a local server: `python3 -m http.server 8000` or `npx serve .`
+2. Use a local server: `python3 -m http.server 8000` or `npx serve . -p 8000`
 
 ### Deployment
 The site automatically deploys to GitHub Pages on every push to `main` branch via GitHub Actions (`.github/workflows/deploy.yml`).
@@ -85,6 +85,7 @@ The site automatically deploys to GitHub Pages on every push to `main` branch vi
 
 ### Image Assets
 - Optimize images before adding them (use WebP when possible)
+- Keep image file sizes reasonable (aim for <500KB for photos, <100KB for icons/logos)
 - Place in appropriate subdirectory under `assets/`
 - Use descriptive filenames
 - Always include alt text for accessibility
