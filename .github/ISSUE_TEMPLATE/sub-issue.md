@@ -8,14 +8,14 @@ assignees: ''
 
 ## Parent Issue
 <!-- Link to the parent issue or epic this sub-issue belongs to -->
-Closes: #
+Parent issue: #
 
 ## Description
 <!-- A clear and concise description of what this sub-issue addresses -->
 
 ## Acceptance Criteria
 <!-- List the specific criteria that must be met for this sub-issue to be considered complete -->
-- [ ] 
+- [ ] Replace with specific acceptance criteria
 - [ ] 
 - [ ] 
 
